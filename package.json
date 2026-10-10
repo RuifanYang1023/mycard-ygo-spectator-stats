@@ -1,0 +1,20 @@
+{
+  "name": "mycard-ygo-spectator-stats",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Realtime MyCard YGOPro spectator statistics collector",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "rooms": "node src/index.js rooms",
+    "auth": "node src/index.js auth",
+    "analytics": "node src/index.js analytics",
+    "watch": "node src/index.js watch",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "sql.js": "^1.13.0",
+    "ygopro-msg-encode": "^1.2.2",
+    "ygopro-yrp-encode": "^1.0.8"
+  }
+}

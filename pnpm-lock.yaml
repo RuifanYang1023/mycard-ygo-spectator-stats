@@ -1,0 +1,61 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sql.js:
+        specifier: ^1.13.0
+        version: 1.14.2
+      ygopro-msg-encode:
+        specifier: ^1.2.2
+        version: 1.3.0
+      ygopro-yrp-encode:
+        specifier: ^1.0.8
+        version: 1.0.8
+
+packages:
+
+  '@cjser/lzma1@0.3.0-cjser.2':
+    resolution: {integrity: sha512-Zpyu58lLYjh/H58Vt3/fc513z5za6EfOUgIp3W3P4WWm9yoNmNbByIsmYOhf2reKh6ZWsI+PSarnMeXa+U8g+w==}
+    engines: {bun: '>=1.0.0', node: '>=18.0.0'}
+
+  sql.js@1.14.2:
+    resolution: {integrity: sha512-3ZGPovObMFrdw79zrUHbfdE/DLIsy8jdNdssmMSQuRAymedU6q84asPt0kgiqrdMYlPegDItiIMfmIXzZnYFcw==}
+
+  typed-reflector@1.1.2:
+    resolution: {integrity: sha512-B4XrtXX+qf4WbfltbOSF87hGAWboEEMM/UWQY8m9kOtOGUuJzGQXyKbs+6MOLiCcjY87CpoLnSCvxWHAk04//w==}
+
+  ygopro-deck-encode@1.0.16:
+    resolution: {integrity: sha512-bzbSPcu9GGw+wl5L4aVuoLOAD+SOij9yF5vMWPjULGwskLe1NdxMeeg5HdIO/fveIqhB/bvaj4RdgcTG2O1SOg==}
+
+  ygopro-msg-encode@1.3.0:
+    resolution: {integrity: sha512-k0EQIVyEqa9d/IcR7oZgXz9qdboRongnZwjBlQ5emlDhrc+ml/F3PmbF2g29Z03oGZn8cKDTGRMZQUCfJrpc3w==}
+
+  ygopro-yrp-encode@1.0.8:
+    resolution: {integrity: sha512-m1OkByxrLOo++H36OSUNETGByvZw8wdF7M76VM8i+IjJpvYUVLxXKN4/sCViM/6+dkcdyVf4ljCo5XU+OFVlaQ==}
+
+snapshots:
+
+  '@cjser/lzma1@0.3.0-cjser.2': {}
+
+  sql.js@1.14.2: {}
+
+  typed-reflector@1.1.2: {}
+
+  ygopro-deck-encode@1.0.16: {}
+
+  ygopro-msg-encode@1.3.0:
+    dependencies:
+      typed-reflector: 1.1.2
+      ygopro-deck-encode: 1.0.16
+      ygopro-yrp-encode: 1.0.8
+
+  ygopro-yrp-encode@1.0.8:
+    dependencies:
+      '@cjser/lzma1': 0.3.0-cjser.2
+      ygopro-deck-encode: 1.0.16
